@@ -1,0 +1,14 @@
+{"timestamp":"00:00:17.733","source":"Server","level":"WARN","message":"⚠ Slow filesystem detected. The benchmark took 247ms. If \\\\?\\E:\\Downloads\\interview-os-20260809T095649Z-1-001\\interview-os\\interview-os\\.next\\dev is a network drive, consider moving it to a local folder.\nSee more: https://nextjs.org/docs/app/guides/local-development"}
+{"timestamp":"00:00:19.615","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:19.617","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
+{"timestamp":"00:00:19.618","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
+{"timestamp":"00:00:19.619","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
+{"timestamp":"00:00:19.619","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:23.217","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:26.264","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:05:05.715","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:05:21.662","source":"Server","level":"LOG","message":"○ Compiling /interview ..."}
+{"timestamp":"01:02:15.616","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"01:02:24.677","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"01:03:19.895","source":"Server","level":"LOG","message":"○ Compiling /dashboard ..."}
+{"timestamp":"01:04:02.075","source":"Server","level":"LOG","message":"○ Compiling /api/interview ..."}

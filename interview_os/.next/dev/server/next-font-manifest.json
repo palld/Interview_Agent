@@ -1,0 +1,23 @@
+{
+  "app": {
+    "[project]/interview-os/app/dashboard/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/interview-os/app/interview/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/interview-os/app/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/interview-os/app/report/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --ink: 240 10% 4%;
+    --surface: 240 9% 8%;
+    --surface-raised: 240 8% 13%;
+    --line: 240 14% 92%;
+
+    /* Text */
+    --text-primary: 240 20% 97%;
+    --text-muted: 240 6% 64%;
+    --text-faint: 240 6% 40%;
+
+    /* Signature accents */
+    --signal: 243 91% 67%;
+    --signal-soft: 243 91% 67%;
+    --pulse: 32 100% 65%;
+    --pulse-soft: 32 100% 65%;
+    --mint: 158 64% 52%;
+    --danger: 0 84% 63%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-line/10;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-ink text-text-primary antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, hsl(var(--signal) / 0.14), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, hsl(var(--pulse) / 0.06), transparent);
+    background-attachment: fixed;
+  }
+  ::selection {
+    background-color: hsl(var(--signal) / 0.3);
+    color: hsl(var(--text-primary));
+  }
+  :focus-visible {
+    outline: 2px solid hsl(var(--signal) / 0.7);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Scrollbars */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--line) / 0.14);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--line) / 0.22);
+    background-clip: padding-box;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism surface used across cards, navbar, sidebar, modals */
+  .glass {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--surface-raised) / 0.6),
+      hsl(var(--surface) / 0.4)
+    );
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid hsl(var(--line) / 0.08);
+  }
+
+  .glass-strong {
+    background: hsl(var(--surface-raised) / 0.75);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    border: 1px solid hsl(var(--line) / 0.1);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .skeleton-shimmer {
+    background-image: linear-gradient(
+      90deg,
+      hsl(var(--surface-raised) / 0.4) 0px,
+      hsl(var(--line) / 0.12) 40px,
+      hsl(var(--surface-raised) / 0.4) 80px
+    );
+    background-size: 800px 100%;
+  }
+
+  .signal-gradient-text {
+    background: linear-gradient(
+      120deg,
+      hsl(var(--text-primary)) 20%,
+      hsl(var(--signal)) 55%,
+      hsl(var(--pulse)) 90%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .neural-thinking {
+    animation: neural-thinking 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes neural-thinking {
+  0%, 100% { filter: drop-shadow(0 0 0 hsl(var(--signal) / 0)); opacity: 0.72; }
+  50% { filter: drop-shadow(0 0 8px hsl(var(--signal) / 0.65)); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
